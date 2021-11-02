@@ -17,7 +17,6 @@
 //   }
 // }
 // swim(tom)
-
 // class Father{
 //   height: number = 60
 // }
@@ -33,12 +32,7 @@
 //   }
 //   return false
 // }
-
-function getCacheData(key: string): any {
-  return (window as any).cache[key];
+function getCacheData(key) {
+    return window.cache[key];
 }
-interface Cat {
-  name: string;
-  run(): void;
-}
-const tom: Cat = getCacheData('tom')
+const tom = getCacheData('tom');
