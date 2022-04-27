@@ -13,10 +13,10 @@ async function strPromise() {
   return 'string promise'
 }
 
-interface Person {
-  name: string;
-  age: number;
-}
+// interface Person {
+//   name: string;
+//   age: number;
+// }
 async function personPromise() {
   return {
     name: 'p',
@@ -32,10 +32,10 @@ type PersonPromise = ReturnType<typeof personPromise> // Promise<Person>
 // 反解
 type PersonPromiseRes = PromiseResType<PersonPromise> // Person
 
-interface Person {
-    name: string;
-    age: number;
-  }
+type Person = {
+  name: string;
+  age: number;
+}
   
   const sem: Person = { name: "semlinker", age: 30 };
   
